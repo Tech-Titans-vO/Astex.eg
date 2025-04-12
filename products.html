@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astex - Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Astex</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html" class="active">Products</a>
+                <a href="contact.html">Contact</a>
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Section -->
+    <section class="products-page">
+        <div class="products-header">
+            <h1>Our Products</h1>
+            <div class="filter-options">
+                <select id="category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="category1">Category 1</option>
+                    <option value="category2">Category 2</option>
+                    <option value="category3">Category 3</option>
+                </select>
+                <select id="price-filter">
+                    <option value="all">All Prices</option>
+                    <option value="low">Low to High</option>
+                    <option value="high">High to Low</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card" data-category="category1" data-price="99.99">
+                <a href="product-details.html?id=Round-Black">
+                    <img src="Imgs/Round-Black.jpeg" alt="Round Black">
+                    <h3>Round</h3>
+                    <p class="price">$99.99</p>
+                </a>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card" data-category="category2" data-price="199.99">
+                <a href="product-details.html?id=Quarter-Zipper">
+                    <img src="Imgs/Quarter-Zipper-Face.jpeg" alt="Quarter Zipper">
+                    <h3>Quarter Zipper</h3>
+                    <p class="price">$199.99</p>
+                </a>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Astex - Premium quality products for your lifestyle.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: contact@astex.com</p>
+                <p>Phone: (+2) 01020304050</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Astex. All rights reserved. Directed By : Sameh Nasrallah</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

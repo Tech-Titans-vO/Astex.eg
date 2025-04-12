@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astex - Product Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Astex</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact</a>
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Details Section -->
+    <section class="product-details">
+        <div class="product-container">
+            <div class="product-images">
+                <div class="main-image">
+                    <img src="" alt="Product Image" id="mainProductImage">
+                </div>
+                <div class="thumbnail-images">
+                    <img src="" alt="Thumbnail 1" class="thumbnail active">
+                    <img src="" alt="Thumbnail 2" class="thumbnail">
+                    <img src="" alt="Thumbnail 3" class="thumbnail">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1 id="productName">Product Name</h1>
+                <p class="price" id="productPrice">$0.00</p>
+                <div class="product-description">
+                    <h3>Description</h3>
+                    <p id="productDescription">Product description goes here...</p>
+                </div>
+                <div class="product-features">
+                    <h3>Features</h3>
+                    <ul id="productFeatures">
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                    </ul>
+                </div>
+                <div class="product-actions">
+                    <div class="quantity-selector">
+                        <button class="quantity-btn" id="decreaseQuantity">-</button>
+                        <input type="number" id="quantity" value="1" min="1">
+                        <button class="quantity-btn" id="increaseQuantity">+</button>
+                    </div>
+                    <button class="add-to-cart-btn" id="addToCart">Add to Cart</button>
+                </div>
+                <div class="product-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-truck"></i>
+                        <span>Free Shipping</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-undo"></i>
+                        <span>30-Day Returns</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Secure Payment</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <h2>You May Also Like</h2>
+        <div class="products-grid">
+            <!-- Related products will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Astex - Premium quality products for your lifestyle.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: contact@astex.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Astex. All rights reserved. Directed By : Sameh Nasrallah</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="product-details.js"></script>
+</body>
+</html> 
