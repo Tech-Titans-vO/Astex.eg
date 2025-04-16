@@ -541,8 +541,9 @@ footer {
     }
 
     .hero {
-        height: 80vh;
+        height: 100vh;
         margin-top: 80px;
+        background-attachment: scroll;
     }
 
     .hero h1 {
