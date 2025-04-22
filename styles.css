@@ -558,17 +558,28 @@ footer {
     }
 
     .hero {
-        height: 100vh;
-        margin-top: 80px;
-        background-attachment: scroll;
+        height: 60vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #f5f5f5;
+    }
+
+    .hero::before {
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-content {
+        padding: 1rem;
     }
 
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
     }
 
     .hero p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .products-grid {
@@ -659,6 +670,14 @@ footer {
 
     .add-to-cart-btn {
         width: 100%;
+    }
+
+    .products-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .filter-options {
+        max-width: 250px;
     }
 }
 
@@ -1009,5 +1028,68 @@ footer {
     
     .product-card .price {
         font-size: 1rem;
+    }
+}
+
+/* Products Header Mobile Adjustments */
+.products-header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #f5f5f5;
+}
+
+.products-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.filter-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.filter-options select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 1rem;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .products-header {
+        padding: 1.5rem 1rem;
+    }
+
+    .products-header h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .filter-options {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .filter-options select {
+        padding: 0.7rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .products-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .filter-options {
+        max-width: 250px;
     }
 }
